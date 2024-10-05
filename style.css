@@ -10,6 +10,14 @@ body {
     padding: 0;
 }
 
+.navbar-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(44, 44, 44);
+    border-bottom: 2px solid rgb(184, 0, 0);
+}
+
 .navbar-black {
     color: rgb(184, 0, 0);
     -webkit-text-stroke-width: 1px;
@@ -22,12 +30,10 @@ body {
     display: flex;
     align-items: center;
     list-style-type: none;
-    background-color: rgb(44, 44, 44);
-    border-bottom: 2px solid rgb(184, 0, 0);
     margin: 0;
     padding: 0;
     height: 60px;
-    overflow: hidden;
+    overflow: hidden;  
 }
 
 .navbar-black-ul li {
@@ -42,7 +48,6 @@ body {
 }
 
 .navbar-black-ul a {
-    display: inline-block;
     text-decoration: none;
     color: white;
     /* color: rgb(184, 0, 0); color probar*/
@@ -68,7 +73,8 @@ body {
 }
 
 .logo-main {
-    height: 150; 
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     padding: 10px; 
     vertical-align: middle; 
@@ -78,4 +84,14 @@ body {
 .align-center-black-background {
     background-color: rgb(29, 27, 27);
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bar-background {
+    background-color: rgb(29, 27, 27);
+    text-align: center;
+    font-style: italic;
+    color: white;
+    padding: 3px;
 }
