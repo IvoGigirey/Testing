@@ -3,153 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
+    <title>Mitre Gym - Contacto</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="align-center-black-background">
-      <img src="img/Logo_SinFondo1.png" class="logo-main" alt="" />
+      <img src="img/Logo_sinfondoachicado.png" class="logo-main" alt="" />
     </div>
     <header class="navbar-sticky">
       <div class="navbar-sticky">
         <div class="navbar-black-ul">
           <ul>
-            <li><a href="index.html">MITRE SHOP</a></li>
-            <li><a href="">PRODUCTOS</a></li>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
             <li><a href="contacto.html" id="color-active-tab">CONTACTO</a></li>
           </ul>
         </div>
       </div>
     </header>
     <main>
-      <h1>Formularios</h1>
-      <form action="" method="post">
-        <div>
-          <fieldset>
-            <legend>Datos Personales</legend>
-            <div>
-              <label for="">Nombre: </label>
-              <input
-                type="text"
-                name="nombre"
-                id="Nombre"
-                placeholder="Juan"
-                required
-              />
-            </div>
-            <div>
-              <label for="">Apellido: </label>
-              <input
-                type="text"
-                name="apellido"
-                id="apellido"
-                placeholder="Perez"
-              />
-            </div>
-            <div>
-              <label for="">Fecha de nacimiento: </label>
-              <input type="date" name="fecha" id="fecha" required />
-            </div>
-            <div>
-              <label for="">Email: </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="juanperez@gmail.com"
-                required
-              />
-            </div>
-          </fieldset>
+      <div class="contact-text-black-background">
+        <div class="contact-text-section">
+          <h1 class="contact-text-section-red-background">CONTACTANOS</h1>
         </div>
-        <div>
-          <fieldset>
-            <legend>Preferencias</legend>
-            <div>
-              <label for="">Dias de entreno:</label>
-              <input type="radio" name="cantidad" id="1dia" />
-              <label for="">1 Dia</label>
-              <input type="radio" name="cantidad" id="2dias" />
-              <label for="">2 Dias</label>
-              <input type="radio" name="cantidad" id="3dias" />
-              <label for="">3 Dias</label>
-              <input type="radio" name="cantidad" id="4dias" />
-              <label for="">4 Dias</label>
-              <input type="radio" name="cantidad" id="5dias" />
-              <label for="">5 Dias</label>
-              <input type="radio" name="cantidad" id="6dias" />
-              <label for="">6 Dias</label>
-            </div>
-            <div>
-              <label for="">Musculos a entrenar:</label>
-              <input type="checkbox" name="cantidad" id="1dia" />
-              <label for="">Piernas</label>
-              <input type="checkbox" name="cantidad" id="2dias" />
-              <label for="">Pectorales</label>
-              <input type="checkbox" name="cantidad" id="3dias" />
-              <label for="">Espalda</label>
-              <input type="checkbox" name="cantidad" id="4dias" />
-              <label for="">Brazos</label>
-              <input type="checkbox" name="cantidad" id="5dias" />
-              <label for="">Abdominales</label>
-            </div>
-          </fieldset>
+        <div class="form-container-flex">
+          <div class="container">
+            <h2 class="form-title">
+              Contáctese con nosotros por cualquier cosa relacionada con nuestra
+              empresa o servicios. Haremos lo posible por responderle a la mayor
+              brevedad.
+            </h2>
+            <form class="form" action="" method="post">
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input
+                  type="text"
+                  class="input-field"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Juan"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="input-field"
+                  name="email"
+                  id="email"
+                  placeholder="juanperez@gmail.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Número de teléfono</label>
+                <input
+                  type="email"
+                  class="input-field"
+                  name="phonenumber"
+                  id="phonenumber"
+                  placeholder="11 xxxx-xxxx"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Asunto</label>
+                <input
+                  type="email"
+                  class="input-field"
+                  name="asunto"
+                  id="asunto"
+                  placeholder="Ej: Consulta stock"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea
+                  class="input-field textarea-field"
+                  name="mensaje"
+                  id="mensaje"
+                  placeholder="Mensaje..."
+                ></textarea>
+              </div>
+              <div class="buttons">
+                <button type="submit" class="btn btn-submit">Enviar</button>
+              </div>
+            </form>
+            <h3 class="map-title">Dónde nos encontramos</h3>
+            <p class="map-address">Av. Ficticia 1234, Buenos Aires, Argentina<br />Tel: +54 11 1234-5678 <br /> E-Mail: mitreshop@contacto.com.ar</p>
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.8070471789359!2d-58.49634456595709!3d-34.623673379855084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c5b84b5987%3A0x629715b0fa9bc1d8!2sClub%20Social%20y%20Deportivo%20Mitre!5e0!3m2!1ses-419!2sar!4v1727637174940!5m2!1ses-419!2sar"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <fieldset>
-          <legend>Mensajes Adicionales</legend>
-          <div>
-            <label for="">Mensaje: </label>
-            <textarea
-              name="mensaje"
-              id="mensaje"
-              placeholder="Mensaje..."
-            ></textarea>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Opciones</legend>
-          <div>
-            <div>
-              <select name="" id="">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </select>
-            </div>
-          </div>
-        </fieldset>
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
-      </form>
+      </div>
     </main>
-    <nav>
-      <ul class="no-format-list">
-        <li>
-          <a href="index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/mitregym_/">Instagram</a>
-        </li>
-        <li>
-          <p>Ubicacion</p>
-          <a
-            href="https://www.google.com/maps/place/Club+Social+y+Deportivo+Mitre/@-34.6236734,-58.4963446,19z/data=!4m6!3m5!1s0x95bcc9c5b84b5987:0x629715b0fa9bc1d8!8m2!3d-34.6236957!4d-58.49547!16s%2Fg%2F11c2kz7pxw?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D"
-          ></a>
-        </li>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.8070471789359!2d-58.49634456595709!3d-34.623673379855084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c5b84b5987%3A0x629715b0fa9bc1d8!2sClub%20Social%20y%20Deportivo%20Mitre!5e0!3m2!1ses-419!2sar!4v1727637174940!5m2!1ses-419!2sar"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </ul>
-    </nav>
-
-    <div style="height: 2000px"></div>
-    
     <footer class="bar-background">
       <small>Copyright por Ivo Gigirey</small>
     </footer>
