@@ -418,7 +418,6 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    /* font-size: 1rem; */
     font-size: 1vw;
     font-style: italic;
     font-weight: bold;
@@ -441,7 +440,79 @@ button {
     text-align: center; 
 }
 
-/* Media Query para pantallas más pequeñas */
+.test-grid-footer-black-background {
+    display: grid;
+    background-color: rgb(27, 27, 27);
+    border-top: 2px solid rgb(189, 0, 0);
+    padding: 20px;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    align-items: start;
+}
+
+.grid-item > h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#grid-item-principal {
+    font-size: 1em;
+    grid-column: 1 / span 3;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.contact-text-section-red-background-footer {
+    /* display: inline-block; */
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: rgb(189, 0, 0);
+    color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 5px;
+    transform: rotateZ(-5deg);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.contact-text-section-red-background-footer:hover {
+    font-size: 2.5em;
+}
+
+.contact-text-section-footer {
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+.map-address-grid {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .test-grid-footer-black-background {
+        grid-template-columns: 1fr;
+        height: auto; 
+    }
+
+    #grid-item-principal {
+        grid-column: 1;
+    }
+
+    .contact-text-section-red-background-footer {
+        font-size: 1.5em;
+    }
+}
+
 @media (min-width: 480px) {
     .merch-presentation-text-image-title {
         font-size: 6vw; 
