@@ -20,4 +20,4 @@
 ## Esta sección nos lleva a un formulario donde podremos ingresar "Nombre", "Email", "Número de teléfono", "Asunto" y "Mensaje". También se muestran los datos de contacto de MITRE SHOP (dirección, teléfono, email) y un mapa de Google Maps con la ubicación física de la marca. Al enviar el formulario, la información ingresada será enviada a la empresa.
 
 # sección RESEÑAS:
-## Esta sección
+## En esta sección, los usuarios pueden leer las opiniones de otros clientes sobre MITRE SHOP. Las reseñas se presentan en formato de tarjetas que muestran el nombre del cliente, calificación (de 1 a 5 estrellas) y comentario. También habrá un botón "Dejar una reseña", que abrirá un formulario para que los visitantes puedan compartir su experiencia con la tienda.

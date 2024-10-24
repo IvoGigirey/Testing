@@ -504,6 +504,25 @@ button {
     margin: 0px 50px 0px 50px;
 }
 
+.grid-item-opinion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.grid-item-opinion-container > h1 {
+    color: white;
+    font-size: 1.25em;
+    margin: 10px;
+}
+
+#gray-background {
+    background-color: rgb(27, 27, 27);
+}
+
+
 @media (max-width: 1700px) {
     .products-products-grid-container {
         grid-template-columns: repeat(3, 1fr);
