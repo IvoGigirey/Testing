@@ -510,6 +510,7 @@ button {
     justify-content: center;
     align-items: center;
     margin: 5px;
+    padding-top: 2em;
 }
 
 .grid-item-opinion-container > h1 {
@@ -696,6 +697,14 @@ button {
 
     .navbar-black-ul ul, li, a {
         display: block;
+    }
+
+    .grid-item-opinion-container > h1 {
+        font-size: 1em;
+    }
+
+    #grid-item-principal > p {
+        font-size: 1em;
     }
 }
 
