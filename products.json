@@ -1,0 +1,148 @@
+{
+    "products": [
+      {
+        "id": "press-banca",
+        "name": "MÁQUINA PRESS BANCA PLANO REGULABLE",
+        "image": "img/pressbanca_ejemplo.jpg",
+        "alt": "PressBancaEjemplo",
+        "description": "Máquina para realizar press banca en posición plana, ideal para fortalecer el pecho y triceps.",
+        "link": "",
+        "price": 880000
+      },
+      {
+        "id": "press-bancainclinado",
+        "name": "MÁQUINA PRESS BANCA INCLINADO",
+        "image": "img/pressbancainclinado_ejemplo.jpg",
+        "alt": "PressBancaInclinadoEjemplo",
+        "description": "Máquina para realizar press banca en posición inclinada, ayuda a desarrollar el pectoral superior.",
+        "link": "",
+        "price": 770000
+      },
+      {
+        "id": "jalonpecho",
+        "name": "MÁQUINA POLEA ALTA Y POLEA BAJA",
+        "image": "img/jalonpecho_ejemplo.jpg",
+        "alt": "JalonPechoEjemplo",
+        "description": "Máquina para realizar jalones en polea alta y baja, permite trabajar espalda y bíceps.",
+        "link": "",
+        "price": 1055000
+      },
+      {
+        "id": "remosentado",
+        "name": "MÁQUINA REMO SENTADO POLEA BAJA",
+        "image": "img/remosentado_ejemplo.jpg",
+        "alt": "RemoSentado",
+        "description": "Máquina de remo sentado, ideal para trabajar espalda, hombros y bíceps.",
+        "link": "",
+        "price": 1270000
+      },
+      {
+        "id": "creatina",
+        "name": "CREATINA STAR NUTRITION POTE 300 GRAMOS",
+        "image": "img/suplementos/creatina-monohidratada-suplemento-pote-300g.jpg",
+        "alt": "PressBancaEjemplo",
+        "description": "Creatina en polvo, ayuda a mejorar el rendimiento y recuperación muscular.",
+        "link": "",
+        "price": 27300
+      },
+      {
+        "id": "proteina",
+        "name": "PROTEÍNA EN POLVO ENA POTE 930 GRAMOS",
+        "image": "img/suplementos/proteina_pote.jpg",
+        "alt": "PressBancaInclinadoEjemplo",
+        "description": "Proteína en polvo, ideal para la recuperación y crecimiento muscular.",
+        "link": "",
+        "price": 38000
+      },
+      {
+        "id": "multivitaminico",
+        "name": "MULTIVITAMÍNICO STAR NUTRITION 60 COMPRIMIDOS",
+        "image": "img/suplementos/multivitaminico.jpg",
+        "alt": "JalonPechoEjemplo",
+        "description": "Multivitamínico para completar las necesidades diarias de vitaminas y minerales.",
+        "link": "",
+        "price": 17500
+      },
+      {
+        "id": "massgainer",
+        "name": "WEIGHT GAINER ENA POTE 1500 GRAMOS",
+        "image": "img/suplementos/massgainer.webp",
+        "alt": "RemoSentado",
+        "description": "Ganador de peso en polvo, ayuda a ganar masa muscular rápidamente.",
+        "link": "",
+        "price": 29530
+      },
+      {
+        "id": "mancuernas_5kg",
+        "name": "PAR MANCUERNAS HEXAGONALES 5KG",
+        "image": "./img/mancuernas/mancuernas_5kg.webp",
+        "alt": "Mancuernas5kg",
+        "description": "Par de mancuernas hexagonales de 5kg cada una, perfectas para entrenamiento de fuerza.",
+        "link": "",
+        "price": 83199
+      },
+      {
+        "id": "mancuernas_7.5kg",
+        "name": "PAR MANCUERNAS HEXAGONALES 7.5KG",
+        "image": "./img/mancuernas/mancuernas_7.5kg.png",
+        "alt": "Mancuernas2.5kg",
+        "description": "Par de mancuernas hexagonales de 7.5kg cada una, ideales para ejercicios de fuerza y resistencia.",
+        "link": "",
+        "price": 93199
+      },
+      {
+        "id": "mancuernas_10kg",
+        "name": "PAR MANCUERNAS HEXAGONALES 10KG",
+        "image": "./img/mancuernas/mancuernas_10kg.webp",
+        "alt": "Mancuernas10kg",
+        "description": "Par de mancuernas hexagonales de 10kg cada una, para un entrenamiento intenso.",
+        "link": "",
+        "price": 160399
+      },
+      {
+        "id": "mancuernas_15kg",
+        "name": "PAR MANCUERNAS HEXAGONALES 15KG",
+        "image": "./img/mancuernas/mancuernas_15kg.webp",
+        "alt": "Mancuernas20kg",
+        "description": "Par de mancuernas hexagonales de 15kg cada una, ideales para ejercicios de alta intensidad.",
+        "link": "",
+        "price": 189999
+      },
+      {
+        "id": "disco_2.5kg",
+        "name": "DISCO DE FUNDICIÓN 2.5KG TRIGRIP 25MM",
+        "image": "./img/pesasYdiscos/disco2.5kg.webp",
+        "alt": "Disco2.5kg",
+        "description": "Disco de fundición de 2.5kg con trigrip, para levantar peso con comodidad.",
+        "link": "",
+        "price": 3799
+      },
+      {
+        "id": "disco_5kg",
+        "name": "DISCO DE FUNDICIÓN 5KG TRIGRIP 25MM",
+        "image": "./img/pesasYdiscos/disco5kg.webp",
+        "alt": "Disco5kg",
+        "description": "Disco de fundición de 5kg con trigrip, ideal para incrementar la carga en los ejercicios.",
+        "link": "",
+        "price": 7499
+      },
+      {
+        "id": "disco_10kg",
+        "name": "DISCO DE FUNDICIÓN 10KG TRIGRIP 25MM",
+        "image": "./img/pesasYdiscos/disco10kg.webp",
+        "alt": "Disco10kg",
+        "description": "Disco de fundición de 10kg con trigrip, para entrenamiento pesado.",
+        "link": "",
+        "price": 13999
+      },
+      {
+        "id": "disco_20kg",
+        "name": "DISCO DE FUNDICIÓN 20KG TRIGRIP 25MM",
+        "image": "./img/pesasYdiscos/disco20kg.webp",
+        "alt": "Disco20kg",
+        "description": "Disco de fundición de 20kg con trigrip, para ejercicios de fuerza extrema.",
+        "link": "",
+        "price": 25999
+      }
+    ]
+}

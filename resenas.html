@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mitre SHOP - Reseñas</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="script.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -83,16 +84,15 @@
             <h2 class="form-title">
               Tu opinión nos importa, contanos tu experiencia.
             </h2>
-            <form class="form" action="" method="post">
+            <form class="form" action="" method="post" onsubmit="return validarFormularioResena();">
               <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input
                   type="text"
                   class="input-field"
                   name="nombre"
-                  id="nombre"
+                  id="nombre-resena"
                   placeholder="Juan"
-                  required
                 />
               </div>
               <div class="form-group">
@@ -101,9 +101,8 @@
                   type="email"
                   class="input-field"
                   name="email"
-                  id="email"
+                  id="email-resena"
                   placeholder="juanperez@gmail.com"
-                  required
                 />
               </div>
               <div class="form-group">
@@ -111,7 +110,7 @@
                 <textarea
                   class="input-field textarea-field"
                   name="mensaje"
-                  id="mensaje"
+                  id="mensaje-resena"
                   placeholder="Mensaje..."
                 ></textarea>
               </div>

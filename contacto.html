@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mitre SHOP - Contacto</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="script.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -52,7 +53,7 @@
               empresa o servicios. Haremos lo posible por responderle a la mayor
               brevedad.
             </h2>
-            <form class="form" action="" method="post">
+            <form class="form" action="" method="post" onsubmit="return validarFormulario();">
               <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input
@@ -61,7 +62,6 @@
                   name="nombre"
                   id="nombre"
                   placeholder="Juan"
-                  required
                 />
               </div>
               <div class="form-group">
@@ -72,29 +72,26 @@
                   name="email"
                   id="email"
                   placeholder="juanperez@gmail.com"
-                  required
                 />
               </div>
               <div class="form-group">
-                <label for="email">Número de teléfono</label>
+                <label for="numero">Número de teléfono</label>
                 <input
-                  type="email"
+                  type="text"
                   class="input-field"
                   name="phonenumber"
                   id="phonenumber"
                   placeholder="11 xxxx-xxxx"
-                  required
                 />
               </div>
               <div class="form-group">
-                <label for="email">Asunto</label>
+                <label for="asunto">Asunto</label>
                 <input
-                  type="email"
+                  type="text"
                   class="input-field"
                   name="asunto"
                   id="asunto"
                   placeholder="Ej: Consulta stock"
-                  required
                 />
               </div>
               <div class="form-group">

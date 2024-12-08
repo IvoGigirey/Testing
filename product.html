@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="product-title"></title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="script.js"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/icon/site.webmanifest" />
+</head>
+<body>
+    <div class="align-center-black-background">
+        <img src="img/Logo_sinfondoachicado.png" class="logo-main" alt="" />
+      </div>
+      <header class="navbar-sticky">
+        <div class="navbar-sticky">
+          <div class="navbar-black-ul">
+            <ul>
+              <li><a href="index.html" id="color-active-tab">INICIO</a></li>
+              <li><a href="productos.html">PRODUCTOS</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+              <li><a href="resenas.html">RESEÑAS</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    <div id="details-container" class="details-container">
+        <div class="details-content">
+            <h2 id="details-name"></h2>
+            <img id="details-image" src="" alt="">
+            <p id="details-price"></p>
+            <p id="details-description"></p>
+            <button onclick="closeDetails()">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+
+            fetch('products.json')
+                .then(response => response.json())
+                .then(data => {
+                    const product = data.products.find(p => p.id === productId);
+
+                    if (product) {
+                        document.getElementById('product-title').textContent = product.name;  // Ajusta el título de la página
+                        document.getElementById('details-name').textContent = product.name;
+                        document.getElementById('details-image').src = product.image;
+                        document.getElementById('details-image').alt = product.alt;
+                        document.getElementById('details-price').textContent = `Precio: $${product.price}`;
+                        document.getElementById('details-description').textContent = product.description;
+
+                        document.getElementById('details-container').style.display = 'block';
+                    } else {
+                        console.error('Producto no encontrado.');
+                    }
+                })
+                .catch(error => console.error('Error al cargar el producto:', error));
+        });
+
+        function closeDetails() {
+            document.getElementById('details-container').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
