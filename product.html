@@ -41,15 +41,43 @@
           </div>
         </div>
       </header>
-    <div id="details-container" class="details-container">
+    <div id="details-container" class="details-container details-container-product">
         <div class="details-content">
             <h2 id="details-name"></h2>
-            <img id="details-image" src="" alt="">
-            <p id="details-price"></p>
+            <img id="details-image" class="products-container" src="" alt="">
+            <h3 id="details-price"></h3>
             <p id="details-description"></p>
-            <button onclick="closeDetails()">Cerrar</button>
+            <div class="quantity-selection">
+                <label for="quantity" class="quantity-label">Cantidad:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="quantity-input">
+              </div>
+            <button class="button-product-container-details">AÑADIR AL CARRITO</button>
         </div>
     </div>
+
+    <div class="shipping-info">
+        <h2 class="shipping-title">Envío y Entrega</h2>
+        <p class="shipping-description">
+          Nos comprometemos a que recibas tu compra de manera rápida, segura y en perfecto estado. 
+          Ofrecemos envíos a todo el país a través de servicios confiables y reconocidos.
+        </p>
+        <ul class="shipping-benefits">
+          <li><strong>Envío gratis:</strong> Disponible en compras superiores a $50.000.</li>
+          <li><strong>Tiempos de entrega:</strong> Entre 2 y 7 días hábiles, dependiendo de tu ubicación.</li>
+          <li><strong>Seguimiento del pedido:</strong> Recibís un código de seguimiento para monitorear el estado de tu pedido.</li>
+        </ul>
+        <h3 class="shipping-options-title">Opciones de envío</h3>
+        <ul class="shipping-options">
+          <li><strong>Entrega estándar:</strong> Económica y confiable.</li>
+          <li><strong>Entrega exprés:</strong> Ideal si necesitás recibir tu pedido más rápido (aplica costo adicional).</li>
+        </ul>
+        <p class="shipping-help">
+          <strong>¿Problemas con el envío?</strong> Si tenés dudas o necesitás modificar algún detalle de la entrega, 
+          no dudes en <a href="./contacto.html" class="contact-link">contactarnos</a>. Nuestro equipo está disponible para ayudarte.
+        </p>
+      </div>
+      
+    
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -62,24 +90,65 @@
                     const product = data.products.find(p => p.id === productId);
 
                     if (product) {
-                        document.getElementById('product-title').textContent = product.name;  // Ajusta el título de la página
+                        document.getElementById('product-title').textContent = product.name;
                         document.getElementById('details-name').textContent = product.name;
                         document.getElementById('details-image').src = product.image;
                         document.getElementById('details-image').alt = product.alt;
                         document.getElementById('details-price').textContent = `Precio: $${product.price}`;
                         document.getElementById('details-description').textContent = product.description;
-
-                        document.getElementById('details-container').style.display = 'block';
                     } else {
                         console.error('Producto no encontrado.');
                     }
                 })
                 .catch(error => console.error('Error al cargar el producto:', error));
         });
-
-        function closeDetails() {
-            document.getElementById('details-container').style.display = 'none';
-        }
     </script>
+    <div class="test-grid-footer-black-background">
+        <div id="grid-item-principal">
+          <a
+            href="contacto.html"
+            class="contact-text-section-red-background-footer"
+            >CONTACTANOS</a
+          >
+        </div>
+        <div class="grid-item">
+          <h1>INFORMACIÓN</h1>
+          <p class="map-address-grid">
+            Dir: Av. Ficticia 1234, Buenos Aires, Argentina<br />
+            Tel: +54 11 1234-5678 <br />
+            E-Mail: mitreshop@contacto.com.ar
+          </p>
+        </div>
+        <div class="grid-item">
+          <h1>SOBRE NOSOTROS</h1>
+          <p class="map-address-grid">
+            En Mitre Shop nos apasiona potenciar tu rendimiento y ayudarte a
+            alcanzar tus objetivos. Somos una e-commerce especializada en fitness,
+            ofreciendo una amplia gama de productos: desde máquinas de gimnasio de
+            alta calidad hasta discos, pesas y suplementos deportivos. Nos
+            enfocamos en brindar las mejores herramientas para deportistas de
+            todos los niveles, asegurando que encuentres todo lo que necesitás
+            para entrenar sin límites.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h1>OFRECEMOS</h1>
+          <ul
+            class="map-address-grid"
+            style="text-align: left; list-style: circle"
+          >
+            <li>Envíos en 24 horas a todo el país.</li>
+            <li>
+              Asesoramiento personalizado para elegir el equipo perfecto para tus
+              entrenamientos.
+            </li>
+            <li>Productos de marcas líderes en fitness y musculación.</li>
+            <li>Pagos en cuotas sin interés y múltiples medios de pago.</li>
+          </ul>
+        </div>
+      </div>
+      <footer class="bar-background">
+        <small>Copyright por Ivo Gigirey</small>
+      </footer>
 </body>
 </html>

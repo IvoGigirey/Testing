@@ -1,4 +1,3 @@
-console.log('hola');
 document.addEventListener('DOMContentLoaded', function() {
     const productListContainer = document.getElementById('product-list');
     const detailsContainer = document.getElementById('details-container');
@@ -28,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     productName.textContent = product.name;
 
                     const infoLink = document.createElement('a');
-                    infoLink.href = `product.html?id=${product.id}`;  // Enlace a la página del producto
+                    infoLink.href = `product.html?id=${product.id}`;
                     infoLink.classList.add('button-product-container');
                     infoLink.textContent = 'Más información';
 
@@ -51,9 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error al cargar los productos:', error));
 });
 
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     fetch('products.json')
         .then(response => response.json())
@@ -74,10 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error al cargar los productos:', error));
 });
-
-
-
-
 
 function validarFormulario() {
     const nombre = document.getElementById('nombre').value.trim();
