@@ -63,6 +63,70 @@
             "alt": "RemoSentado",
             "price": 29530,
             "description": "Weight Gainer de ENA, un suplemento de 1500 gramos ideal para ganar masa muscular y peso. Su fórmula avanzada combina proteínas de alta calidad con carbohidratos complejos, asegurando un aporte calórico óptimo para aumentar el volumen muscular de forma efectiva."
+        },
+        {
+            "id": "mancuernas-5kg",
+            "name": "PAR MANCUERNAS HEXAGONALES 5KG",
+            "image": "./img/mancuernas/mancuernas_5kg.webp",
+            "alt": "Mancuernas5kg",
+            "price": 18500,
+            "description": "Par de mancuernas hexagonales de 5 kg cada una, ideales para entrenamiento funcional y de fuerza. Fabricadas con acero sólido y recubiertas de goma de alta calidad, garantizan durabilidad y un excelente agarre. Perfectas para ejercicios de tonificación, resistencia y musculación en casa o en el gimnasio."
+        },
+        {
+            "id": "mancuernas-7.5kg",
+            "name": "PAR MANCUERNAS HEXAGONALES 7.5KG",
+            "image": "./img/mancuernas/mancuernas_7.5kg.png",
+            "alt": "Mancuernas7.5kg",
+            "price": 27500,
+            "description": "Par de mancuernas hexagonales de 7.5 kg, diseñadas para mejorar la fuerza y el tono muscular. Su forma hexagonal evita que rueden durante los entrenamientos, y su recubrimiento de goma asegura protección para los pisos y menor ruido."
+        },
+        {
+            "id": "mancuernas-10kg",
+            "name": "PAR MANCUERNAS HEXAGONALES 10KG",
+            "image": "./img/mancuernas/mancuernas_10kg.webp",
+            "alt": "Mancuernas10kg",
+            "price": 36500,
+            "description": "Par de mancuernas hexagonales de 10 kg ideales para entrenamiento intensivo. Gracias a su mango ergonómico y texturizado, proporcionan un agarre cómodo y seguro. Su diseño robusto y recubierto en goma permite un uso prolongado sin desgaste."
+        },
+        {
+            "id": "mancuernas-15kg",
+            "name": "PAR MANCUERNAS HEXAGONALES 15KG",
+            "image": "./img/mancuernas/mancuernas_15kg.webp",
+            "alt": "Mancuernas15kg",
+            "price": 54500,
+            "description": "Par de mancuernas hexagonales de 15 kg, ideales para aumentar fuerza y masa muscular. Fabricadas con acero premium y recubiertas en goma, son perfectas para ejercicios de peso libre en casa o en el gimnasio, ofreciendo versatilidad y durabilidad."
+        },
+        {
+            "id": "disco-2.5kg",
+            "name": "DISCO DE FUNDICIÓN 2.5KG TRIGRIP 25MM",
+            "image": "./img/pesasYdiscos/disco2.5kg.webp",
+            "alt": "Disco2.5kg",
+            "price": 4000,
+            "description": "Disco de fundición de 2.5 kg con diseño trigrip para facilitar su manipulación. Compatible con barras estándar de 25 mm de diámetro, es perfecto para entrenamientos de fuerza progresiva y tonificación."
+        },
+        {
+            "id": "disco-5kg",
+            "name": "DISCO DE FUNDICIÓN 5KG TRIGRIP 25MM",
+            "image": "./img/pesasYdiscos/disco5kg.webp",
+            "alt": "Disco5kg",
+            "price": 7500,
+            "description": "Disco de fundición de 5 kg con diseño trigrip ergonómico para un manejo cómodo y seguro. Ideal para barras estándar de 25 mm, este disco es resistente al desgaste y perfecto para ejercicios de peso libre o con barras."
+        },
+        {
+            "id": "disco-10kg",
+            "name": "DISCO DE FUNDICIÓN 10KG TRIGRIP 25MM",
+            "image": "./img/pesasYdiscos/disco10kg.webp",
+            "alt": "Disco10kg",
+            "price": 14500,
+            "description": "Disco de fundición de 10 kg con diseño trigrip para mayor comodidad y seguridad durante el entrenamiento. Compatible con barras de 25 mm, es perfecto para levantamiento de pesas y ejercicios de fuerza avanzada."
+        },
+        {
+            "id": "disco-20kg",
+            "name": "DISCO DE FUNDICIÓN 20KG TRIGRIP 25MM",
+            "image": "./img/pesasYdiscos/disco20kg.webp",
+            "alt": "Disco20kg",
+            "price": 28500,
+            "description": "Disco de fundición de 20 kg con diseño trigrip resistente y ergonómico. Fabricado para durar, este disco es ideal para barras estándar y entrenamientos de levantamiento pesado, asegurando un rendimiento óptimo."
         }
     ]
 }

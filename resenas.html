@@ -42,6 +42,22 @@
       </div>
     </header>
     <main>
+      <div class="cart-button">
+        <a href="#" id="cart-icon"> 🛒 <span id="cart-count">0</span> </a>
+      </div>
+      <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-header">
+          <h2>Tu Carrito</h2>
+          <button id="close-cart" class="cart-modal-close">✖</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+        </div>
+        <div class="cart-footer">
+          <button id="clear-cart">Vaciar Carrito</button>
+          <button id="checkout">Finalizar Compra</button>
+        </div>
+      </div>
+      <div class="cart-overlay"></div>
       <div class="test-grid-footer-black-background" style="margin: 0; border: 0;">
         <div id="grid-item-principal">
           <p class="contact-text-section-red-background-footer" style="display: inline-block;">NUESTROS CLIENTES</p>
@@ -74,7 +90,6 @@
           </p>
         </div>
       </div>
-
       <div class="contact-text-black-background" id="gray-background">
         <div class="contact-text-section" id="gray-background">
           <h1 class="contact-text-section-red-background">DEJANOS TU RESEÑA</h1>

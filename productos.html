@@ -51,16 +51,33 @@
         <div id="product-list" class="products-products-grid-container"></div>
       </div>
 
-      <div id="details-container" class="details-container" style="display: none;">
+      <div
+        id="details-container"
+        class="details-container"
+        style="display: none"
+      >
         <div class="details-content">
-            <h2 id="details-name"></h2>
-            <img id="details-image" src="" alt="">
-            <p id="details-price"></p>
-            <p id="details-description"></p>
-            <button onclick="closeDetails()">Cerrar</button>
+          <h2 id="details-name"></h2>
+          <img id="details-image" src="" alt="" />
+          <p id="details-price"></p>
+          <p id="details-description"></p>
         </div>
-    </div>
-
+      </div>
+      <div class="cart-button">
+        <a href="#" id="cart-icon"> 🛒 <span id="cart-count">0</span> </a>
+      </div>
+      <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-header">
+          <h2>Tu Carrito</h2>
+          <button id="close-cart" class="cart-modal-close">✖</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+          <button id="clear-cart">Vaciar Carrito</button>
+          <button id="checkout">Finalizar Compra</button>
+        </div>
+      </div>
+      <div class="cart-overlay"></div>
       <div class="test-grid-footer-black-background">
         <div id="grid-item-principal">
           <a

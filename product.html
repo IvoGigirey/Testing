@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="product-title"></title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="script.js"></script>
@@ -24,131 +24,146 @@
       href="./img/icon/favicon-16x16.png"
     />
     <link rel="manifest" href="./img/icon/site.webmanifest" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="align-center-black-background">
-        <img src="img/Logo_sinfondoachicado.png" class="logo-main" alt="" />
-      </div>
-      <header class="navbar-sticky">
-        <div class="navbar-sticky">
-          <div class="navbar-black-ul">
-            <ul>
-              <li><a href="index.html" id="color-active-tab">INICIO</a></li>
-              <li><a href="productos.html">PRODUCTOS</a></li>
-              <li><a href="contacto.html">CONTACTO</a></li>
-              <li><a href="resenas.html">RESEÑAS</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-    <div id="details-container" class="details-container details-container-product">
-        <div class="details-content">
-            <h2 id="details-name"></h2>
-            <img id="details-image" class="products-container" src="" alt="">
-            <h3 id="details-price"></h3>
-            <p id="details-description"></p>
-            <div class="quantity-selection">
-                <label for="quantity" class="quantity-label">Cantidad:</label>
-                <input type="number" id="quantity" name="quantity" min="1" value="1" class="quantity-input">
-              </div>
-            <button class="button-product-container-details">AÑADIR AL CARRITO</button>
-        </div>
+      <img src="img/Logo_sinfondoachicado.png" class="logo-main" alt="" />
     </div>
-
-    <div class="shipping-info">
-        <h2 class="shipping-title">Envío y Entrega</h2>
-        <p class="shipping-description">
-          Nos comprometemos a que recibas tu compra de manera rápida, segura y en perfecto estado. 
-          Ofrecemos envíos a todo el país a través de servicios confiables y reconocidos.
-        </p>
-        <ul class="shipping-benefits">
-          <li><strong>Envío gratis:</strong> Disponible en compras superiores a $50.000.</li>
-          <li><strong>Tiempos de entrega:</strong> Entre 2 y 7 días hábiles, dependiendo de tu ubicación.</li>
-          <li><strong>Seguimiento del pedido:</strong> Recibís un código de seguimiento para monitorear el estado de tu pedido.</li>
-        </ul>
-        <h3 class="shipping-options-title">Opciones de envío</h3>
-        <ul class="shipping-options">
-          <li><strong>Entrega estándar:</strong> Económica y confiable.</li>
-          <li><strong>Entrega exprés:</strong> Ideal si necesitás recibir tu pedido más rápido (aplica costo adicional).</li>
-        </ul>
-        <p class="shipping-help">
-          <strong>¿Problemas con el envío?</strong> Si tenés dudas o necesitás modificar algún detalle de la entrega, 
-          no dudes en <a href="./contacto.html" class="contact-link">contactarnos</a>. Nuestro equipo está disponible para ayudarte.
-        </p>
-      </div>
-      
-    
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const productId = urlParams.get('id');
-
-            fetch('products.json')
-                .then(response => response.json())
-                .then(data => {
-                    const product = data.products.find(p => p.id === productId);
-
-                    if (product) {
-                        document.getElementById('product-title').textContent = product.name;
-                        document.getElementById('details-name').textContent = product.name;
-                        document.getElementById('details-image').src = product.image;
-                        document.getElementById('details-image').alt = product.alt;
-                        document.getElementById('details-price').textContent = `Precio: $${product.price}`;
-                        document.getElementById('details-description').textContent = product.description;
-                    } else {
-                        console.error('Producto no encontrado.');
-                    }
-                })
-                .catch(error => console.error('Error al cargar el producto:', error));
-        });
-    </script>
-    <div class="test-grid-footer-black-background">
-        <div id="grid-item-principal">
-          <a
-            href="contacto.html"
-            class="contact-text-section-red-background-footer"
-            >CONTACTANOS</a
-          >
-        </div>
-        <div class="grid-item">
-          <h1>INFORMACIÓN</h1>
-          <p class="map-address-grid">
-            Dir: Av. Ficticia 1234, Buenos Aires, Argentina<br />
-            Tel: +54 11 1234-5678 <br />
-            E-Mail: mitreshop@contacto.com.ar
-          </p>
-        </div>
-        <div class="grid-item">
-          <h1>SOBRE NOSOTROS</h1>
-          <p class="map-address-grid">
-            En Mitre Shop nos apasiona potenciar tu rendimiento y ayudarte a
-            alcanzar tus objetivos. Somos una e-commerce especializada en fitness,
-            ofreciendo una amplia gama de productos: desde máquinas de gimnasio de
-            alta calidad hasta discos, pesas y suplementos deportivos. Nos
-            enfocamos en brindar las mejores herramientas para deportistas de
-            todos los niveles, asegurando que encuentres todo lo que necesitás
-            para entrenar sin límites.
-          </p>
-        </div>
-        <div class="grid-item">
-          <h1>OFRECEMOS</h1>
-          <ul
-            class="map-address-grid"
-            style="text-align: left; list-style: circle"
-          >
-            <li>Envíos en 24 horas a todo el país.</li>
-            <li>
-              Asesoramiento personalizado para elegir el equipo perfecto para tus
-              entrenamientos.
-            </li>
-            <li>Productos de marcas líderes en fitness y musculación.</li>
-            <li>Pagos en cuotas sin interés y múltiples medios de pago.</li>
+    <header class="navbar-sticky">
+      <div class="navbar-sticky">
+        <div class="navbar-black-ul">
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="productos.html" id="color-active-tab">PRODUCTOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="resenas.html">RESEÑAS</a></li>
           </ul>
         </div>
       </div>
-      <footer class="bar-background">
-        <small>Copyright por Ivo Gigirey</small>
-      </footer>
-</body>
+    </header>
+    <div
+      id="details-container"
+      class="details-container details-container-product"
+    >
+      <div class="details-content">
+        <h2 id="details-name"></h2>
+        <p id="details-id" style="display: none;"></p>
+        <img id="details-image" class="products-container" src="" alt="" />
+        <h3 id="details-price"></h3>
+        <p id="details-description"></p>
+        <div class="quantity-selection">
+          <label for="quantity" class="quantity-label">Cantidad:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            value="1"
+            class="quantity-input"
+          />
+        </div>
+        <button class="button-product-container-details">
+          AÑADIR AL CARRITO
+        </button>
+      </div>
+    </div>
+    <div class="cart-button">
+      <a href="#" id="cart-icon"> 🛒 <span id="cart-count">0</span> </a>
+    </div>
+    <div id="cart-modal" class="cart-modal hidden">
+      <div class="cart-header">
+        <h2>Tu Carrito</h2>
+        <button id="close-cart" class="cart-modal-close">✖</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <button id="clear-cart">Vaciar Carrito</button>
+        <button id="checkout">Finalizar Compra</button>
+      </div>
+    </div>
+    <div class="cart-overlay"></div>
+    <div class="shipping-info">
+      <h2 class="shipping-title">Envío y Entrega</h2>
+      <p class="shipping-description">
+        Nos comprometemos a que recibas tu compra de manera rápida, segura y en
+        perfecto estado. Ofrecemos envíos a todo el país a través de servicios
+        confiables y reconocidos.
+      </p>
+      <ul class="shipping-benefits">
+        <li>
+          <strong>Envío gratis:</strong> Disponible en compras superiores a
+          $50.000.
+        </li>
+        <li>
+          <strong>Tiempos de entrega:</strong> Entre 2 y 7 días hábiles,
+          dependiendo de tu ubicación.
+        </li>
+        <li>
+          <strong>Seguimiento del pedido:</strong> Recibís un código de
+          seguimiento para monitorear el estado de tu pedido.
+        </li>
+      </ul>
+      <h3 class="shipping-options-title">Opciones de envío</h3>
+      <ul class="shipping-options">
+        <li><strong>Entrega estándar:</strong> Económica y confiable.</li>
+        <li>
+          <strong>Entrega exprés:</strong> Ideal si necesitás recibir tu pedido
+          más rápido (aplica costo adicional).
+        </li>
+      </ul>
+      <p class="shipping-help">
+        <strong>¿Problemas con el envío?</strong> Si tenés dudas o necesitás
+        modificar algún detalle de la entrega, no dudes en
+        <a href="./contacto.html" class="contact-link">contactarnos</a>. Nuestro
+        equipo está disponible para ayudarte.
+      </p>
+    </div>
+    <div class="test-grid-footer-black-background">
+      <div id="grid-item-principal">
+        <a
+          href="contacto.html"
+          class="contact-text-section-red-background-footer"
+          >CONTACTANOS</a
+        >
+      </div>
+      <div class="grid-item">
+        <h1>INFORMACIÓN</h1>
+        <p class="map-address-grid">
+          Dir: Av. Ficticia 1234, Buenos Aires, Argentina<br />
+          Tel: +54 11 1234-5678 <br />
+          E-Mail: mitreshop@contacto.com.ar
+        </p>
+      </div>
+      <div class="grid-item">
+        <h1>SOBRE NOSOTROS</h1>
+        <p class="map-address-grid">
+          En Mitre Shop nos apasiona potenciar tu rendimiento y ayudarte a
+          alcanzar tus objetivos. Somos una e-commerce especializada en fitness,
+          ofreciendo una amplia gama de productos: desde máquinas de gimnasio de
+          alta calidad hasta discos, pesas y suplementos deportivos. Nos
+          enfocamos en brindar las mejores herramientas para deportistas de
+          todos los niveles, asegurando que encuentres todo lo que necesitás
+          para entrenar sin límites.
+        </p>
+      </div>
+      <div class="grid-item">
+        <h1>OFRECEMOS</h1>
+        <ul
+          class="map-address-grid"
+          style="text-align: left; list-style: circle"
+        >
+          <li>Envíos en 24 horas a todo el país.</li>
+          <li>
+            Asesoramiento personalizado para elegir el equipo perfecto para tus
+            entrenamientos.
+          </li>
+          <li>Productos de marcas líderes en fitness y musculación.</li>
+          <li>Pagos en cuotas sin interés y múltiples medios de pago.</li>
+        </ul>
+      </div>
+    </div>
+    <footer class="bar-background">
+      <small>Copyright por Ivo Gigirey</small>
+    </footer>
+  </body>
 </html>

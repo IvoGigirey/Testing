@@ -64,6 +64,21 @@
           </div>
         </div>
       </div>
+      <div class="cart-button">
+        <a href="#" id="cart-icon"> 🛒 <span id="cart-count">0</span> </a>
+      </div>
+      <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-header">
+          <h2>Tu Carrito</h2>
+          <button id="close-cart" class="cart-modal-close">✖</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+          <button id="clear-cart">Vaciar Carrito</button>
+          <button id="checkout">Finalizar Compra</button>
+        </div>
+      </div>
+      <div class="cart-overlay"></div>
       <div class="product-text-section">
         <h1 class="product-text-section-red-background">MÁQUINAS</h1>
       </div>
@@ -73,7 +88,7 @@
             <img src="img/pressbanca_ejemplo.jpg" alt="PressBanca" />
             <h2>MÁQUINA PRESS BANCA PLANO REGULABLE</h2>
             <a
-              href="productos.html#press-banca"
+              href="product.html?id=press-banca"
               class="button-product-container"
               >Más información</a
             >
@@ -84,23 +99,32 @@
               alt="PressBancaInclinado"
             />
             <h2>MÁQUINA PRESS BANCA INCLINADO</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=press-bancainclinado"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img src="img/jalonpecho_ejemplo.jpg" alt="JalonPechoEjemplo" />
             <h2>MÁQUINA POLEA ALTA Y POLEA BAJA</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=jalonpecho"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img src="img/remosentado_ejemplo.jpg" alt="RemoSentado" />
             <h2>MÁQUINA REMO SENTADO POLEA BAJA</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=remosentado"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
         </div>
       </section>
-
-      <!-- SECCION SUPLEMENTOS 4 DE MUESTRA -->
-
       <div class="product-text-section">
         <h1 class="product-text-section-red-background">SUPLEMENTOS</h1>
       </div>
@@ -112,12 +136,16 @@
               alt="PoteCreatina"
             />
             <h2>CREATINA STAR NUTRITION POTE 300 GRAMOS</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a href="product.html?id=creatina" class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img src="img/suplementos/proteina_pote.jpg" alt="PoteProteina" />
             <h2>PROTEÍNA EN POLVO ENA POTE 930 GRAMOS</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a href="product.html?id=proteina" class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img
@@ -125,18 +153,23 @@
               alt="Multivitaminico"
             />
             <h2>MULTIVITAMÍNICO STAR NUTRITION 60 COMPRIMIDOS</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=multivitaminico"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img src="img/suplementos/massgainer.webp" alt="PoteWeightGainer" />
             <h2>WEIGHT GAINER ENA POTE 1500 GRAMOS</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=massgainer"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
         </div>
       </section>
-
-      <!-- SECCION MANCUERNAS 4 DE MUESTRA -->
-
       <div class="product-text-section">
         <h1 class="product-text-section-red-background">MANCUERNAS</h1>
       </div>
@@ -148,7 +181,11 @@
               alt="Mancuernas5kg"
             />
             <h2>PAR MANCUERNAS HEXAGONALES 5KG</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=mancuernas-5kg"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img
@@ -156,7 +193,11 @@
               alt="Mancuernas2.5kg"
             />
             <h2>PAR MANCUERNAS HEXAGONALES 7.5KG</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=mancuernas-7.5kg"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img
@@ -164,7 +205,11 @@
               alt="Mancuernas10kg"
             />
             <h2>PAR MANCUERNAS HEXAGONALES 10KG</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=mancuernas-10kg"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img
@@ -172,13 +217,14 @@
               alt="Mancuernas20kg"
             />
             <h2>PAR MANCUERNAS HEXAGONALES 15KG</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=mancuernas-15kg"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
         </div>
       </section>
-
-      <!-- SECCION PESAS 4 DE MUESTRA -->
-
       <div class="product-text-section">
         <h1 class="product-text-section-red-background">PESAS Y DISCOS</h1>
       </div>
@@ -187,27 +233,75 @@
           <div class="products-container">
             <img src="./img/pesasYdiscos/disco2.5kg.webp" alt="Disco2.5kg" />
             <h2>DISCO DE FUNDICIÓN 2.5KG TRIGRIP 25MM</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=disco-2.5kg"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img src="./img/pesasYdiscos/disco5kg.webp" alt="Disco5kg" />
             <h2>DISCO DE FUNDICIÓN 5KG TRIGRIP 25MM</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a href="product.html?id=disco-5kg" class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img src="./img/pesasYdiscos/disco10kg.webp" alt="Disco10kg" />
             <h2>DISCO DE FUNDICIÓN 10KG TRIGRIP 25MM</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=disco-10kg"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
           <div class="products-container">
             <img src="./img/pesasYdiscos/disco20kg.webp" alt="Disco20kg" />
             <h2>DISCO DE FUNDICIÓN 20KG TRIGRIP 25MM</h2>
-            <a href="" class="button-product-container">Más información</a>
+            <a
+              href="product.html?id=disco-20kg"
+              class="button-product-container"
+              >Más información</a
+            >
           </div>
         </div>
       </section>
-
-      <!-- SECCION ENVIOS A TODO EL PAIS, MEDIOS DE PAGO -->
+      <div class="shipping-info">
+        <h2 class="shipping-title">Envío y Entrega</h2>
+        <p class="shipping-description">
+          Nos comprometemos a que recibas tu compra de manera rápida, segura y
+          en perfecto estado. Ofrecemos envíos a todo el país a través de
+          servicios confiables y reconocidos.
+        </p>
+        <ul class="shipping-benefits">
+          <li>
+            <strong>Envío gratis:</strong> Disponible en compras superiores a
+            $50.000.
+          </li>
+          <li>
+            <strong>Tiempos de entrega:</strong> Entre 2 y 7 días hábiles,
+            dependiendo de tu ubicación.
+          </li>
+          <li>
+            <strong>Seguimiento del pedido:</strong> Recibís un código de
+            seguimiento para monitorear el estado de tu pedido.
+          </li>
+        </ul>
+        <h3 class="shipping-options-title">Opciones de envío</h3>
+        <ul class="shipping-options">
+          <li><strong>Entrega estándar:</strong> Económica y confiable.</li>
+          <li>
+            <strong>Entrega exprés:</strong> Ideal si necesitás recibir tu
+            pedido más rápido (aplica costo adicional).
+          </li>
+        </ul>
+        <p class="shipping-help">
+          <strong>¿Problemas con el envío?</strong> Si tenés dudas o necesitás
+          modificar algún detalle de la entrega, no dudes en
+          <a href="./contacto.html" class="contact-link">contactarnos</a>.
+          Nuestro equipo está disponible para ayudarte.
+        </p>
+      </div>
     </main>
 
     <div class="test-grid-footer-black-background">
