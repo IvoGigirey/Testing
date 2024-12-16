@@ -345,7 +345,7 @@ function validarFormulario() {
           </div>
           <p>$${item.price * item.quantity}</p>
           <button class="remove-item" id="${item.id}">Eliminar</button>
-        `;
+        <hr style="width: 100%;">`;
 
         cartItemsContainer.appendChild(cartItem);
     });
