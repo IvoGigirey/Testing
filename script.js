@@ -49,12 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(error => console.error('Error al cargar los productos:', error));
     }
-
     if (window.location.pathname.endsWith('productos.html')) {
         fetch('products.json')
             .then(response => response.json())
             .then(data => {
-                console.log(data);
+                console.log("Productos locales de JSON: ", data);
             })
     }
 });
@@ -112,86 +111,42 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// FUNCION CARRITO 
-document.addEventListener('DOMContentLoaded', function () {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-  
-    const cartIcon = document.getElementById('cart-icon');
-    const cartModal = document.getElementById('cart-modal');
-    const closeCartButton = document.getElementById('close-cart');
-    const cartCountElement = document.getElementById('cart-count');
-    const clearCartButton = document.getElementById('clear-cart');
-  
-    // Mostrar el carrito
-    cartIcon.addEventListener('click', function (event) {
-      event.preventDefault();
-      updateCartModal();
-      cartModal.classList.toggle('hidden');
-    });
-  
-    // Cerrar el carrito
-    closeCartButton.addEventListener('click', function () {
-      cartModal.classList.add('hidden');
-    });
-  
-    // Vaciar carrito
-    clearCartButton.addEventListener('click', function () {
-      cart = [];
-      localStorage.setItem('cart', JSON.stringify(cart));
-      updateCartModal();
-      updateCartCount();
-      console.log('Carrito vaciado')
-    });
-  
-    // Actualizar el contador de productos
-    function updateCartCount() {
-      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-      cartCountElement.textContent = totalItems;
-    }
-  
-    // Inicializar contador de carrito
-    updateCartCount();
-});
-
-// FUNCION CARRITO para manejo de carrito y overlay
+// FUNCION DISPLAY CARRITO
 document.addEventListener('DOMContentLoaded', function () {
     const cartButton = document.querySelector('.cart-button');
     const cartModal = document.querySelector('.cart-modal');
     const cartOverlay = document.querySelector('.cart-overlay');
     const closeModalButton = document.querySelector('.cart-modal-close');
 
-    // Mostrar el carrito y el overlay
+    // Mostrar el carrito
     cartButton.addEventListener('click', () => {
         cartModal.style.display = 'block';
         cartOverlay.classList.add('active');
     });
 
-    // Ocultar el carrito y el overlay
+    // Ocultar el carrito
     closeModalButton.addEventListener('click', () => {
         cartModal.style.display = 'none';
         cartOverlay.classList.remove('active');
     });
 
-    // También cerrar el carrito al hacer clic en el overlay
+    // Cerrar click al apretar el overlay
     cartOverlay.addEventListener('click', () => {
         cartModal.style.display = 'none';
         cartOverlay.classList.remove('active');
     });
 });
 
-// BOTON ANIADIR AL CARRITO
-
+// FUNCION CARRITO
 document.addEventListener('DOMContentLoaded', function () {
-    // Inicializar carrito desde localStorage
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-    // Referencias a elementos del DOM
     const cartIcon = document.getElementById('cart-icon');
     const cartModal = document.getElementById('cart-modal');
     const closeCartButton = document.getElementById('close-cart');
     const cartItemsContainer = document.getElementById('cart-items');
     const cartCountElement = document.getElementById('cart-count');
     const clearCartButton = document.getElementById('clear-cart');
+    const finalizePurchase = document.getElementById('checkout');
 
     // Mostrar/Ocultar el carrito
     cartIcon.addEventListener('click', function (event) {
@@ -211,6 +166,12 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCartModal();
         updateCartCount();
     });
+
+    // Finalizar compra
+     finalizePurchase.addEventListener('click', function (){
+         console.log(cart);
+         alert("Gracias por comprar en MITRE SHOP!");
+    })
 
     // Actualizar el contador de productos
     function updateCartCount() {
@@ -282,9 +243,6 @@ document.addEventListener('DOMContentLoaded', function () {
     updateCartCount();
     updateCartModal();
 });
-
-
-////
 
 function validarFormulario() {
     const nombre = document.getElementById('nombre').value.trim();
@@ -361,7 +319,7 @@ function validarFormulario() {
 }
 
 
-//
+// FUNCION PRODUCTOS API MERCADOLIBRE
 document.addEventListener('DOMContentLoaded', function () {
     if (window.location.pathname.endsWith('productos.html')) {
         const productListContainer = document.getElementById('product-list');
@@ -371,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Función para obtener productos de las categorías seleccionadas
+        // Función para obtener productos de las categorías FITNESS Y MAQUINAS
         async function fetchProductsByCategories() {
             const apiUrlBase = `https://api.mercadolibre.com/sites/MLA/search`;
             const categories = ["MLA12219", "MLA4832"];
@@ -382,6 +340,7 @@ document.addEventListener('DOMContentLoaded', function () {
             try {
                 const results = await Promise.all(promises);
                 const allProducts = results.flatMap(result => result.results); // Combinar todos los productos
+                console.log("Productos API MercadoLibre: ", allProducts.slice(0, 16));
                 return allProducts.slice(0, 16); // Limitar a 16 productos
             } catch (error) {
                 console.error("Error al acceder a la API de MercadoLibre:", error);
