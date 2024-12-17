@@ -1,5 +1,8 @@
 # MITRE SHOP 
 
+## ACCESO A GITHUBPAGES
+Enlace: https://ivogigirey.github.io/proyecto-ecommerce-talentotech-Ivo_Gigirey/
+
 ## DESCRIPCIÓN
 MITRE SHOP es un e-commerce diseñado para la venta de productos relacionados al fitness y al equipamiento de gimnasios. Este proyecto tiene como objetivo ofrecer una plataforma accesible y eficiente donde los usuarios puedan adquirir máquinas de entrenamiento, suplementos deportivos y otros accesorios de calidad.
 
